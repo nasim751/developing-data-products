@@ -1,0 +1,18 @@
+---
+title: "Developing Data Products"
+author: "Nasim Ahmed"
+date: "8 November 2018"
+output: html_document
+---
+
+Create a web page using R markdown that features a map creted with Leaflet
+
+```{r cars}
+library(leaflet)
+
+My_map <- leaflet() %>% addTiles()
+My_map <- My_map %>% addMarkers(lat =-26.158632, lng = 27.903283, popup = "My Office Laboratory")
+My_map
+```
+
+
